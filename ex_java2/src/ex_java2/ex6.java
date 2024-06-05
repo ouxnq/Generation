@@ -7,8 +7,7 @@ public class ex6 {
 	public static void main(String[] args) {
 		String nome;
 		int cod;
-		float salario;
-		double newSalario;
+		float salario, newSalario;
 
 		Scanner leia = new Scanner(System.in);
 
@@ -24,27 +23,27 @@ public class ex6 {
 
 		switch (cod) {
 		case 1:
-			newSalario = salario + (salario * 0.1);
+			newSalario = salario + (salario * 0.1f);
 			System.out.printf("%s, seu cargo é Gerente e seu novo salário será %.2f", nome, newSalario);
 			break;
 		case 2:
-			newSalario = salario + (salario * 0.07);
+			newSalario = salario + (salario * 0.07f);
 			System.out.printf("%s, seu cargo é Vendedor e seu novo salário será %.2f", nome, newSalario);
 			break;
 		case 3:
-			newSalario = salario + (salario * 0.09);
+			newSalario = salario + (salario * 0.09f);
 			System.out.printf("%s, seu cargo é Supervisor e seu novo salário será %.2f", nome, newSalario);
 			break;
 		case 4:
-			newSalario = salario + (salario * 0.06);
+			newSalario = salario + (salario * 0.06f);
 			System.out.printf("%s, seu cargo é Motorista e seu novo salário será %.2f", nome, newSalario);
 			break;
 		case 5:
-			newSalario = salario + (salario * 0.05);
+			newSalario = salario + (salario * 0.05f);
 			System.out.printf("%s, seu cargo é Estoquista e seu novo salário será %.2f", nome, newSalario);
 			break;
 		case 6:
-			newSalario = salario + (salario * 0.08);
+			newSalario = salario + (salario * 0.08f);
 			System.out.printf("%s, seu cargo é Técnico de TI e seu novo salário será %.2f", nome, newSalario);
 			break;
 		}
