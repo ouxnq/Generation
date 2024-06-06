@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class ex6 {
 
 	public static void main(String[] args) {
-		int num1, soma = 0, i = 1,j=0;
-		float total;
+		int num1, i = 1,j=0;
+		float total,soma=0;
 		Scanner leia = new Scanner(System.in);
 
 		System.out.println("Digite números inteiros positivos ou negativos. Irei mostrar a média dos múltiplos de 3.");
