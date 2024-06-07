@@ -15,7 +15,7 @@ public class ex4 {
 				"Vou te mostrar um animal com 3 características. Escolha a primeira: vertebrado ou invertebrado");
 		class1 = leia.next();
 		class1 = class1.toLowerCase();
-		if (class1=="vertebrado") {
+		if (class1.equals("vertebrado")) {
 			System.out.println("Agora escolha outra característica: ave ou mamifero");
 			class2 = leia.next();
 			class2 = class2.toLowerCase();
