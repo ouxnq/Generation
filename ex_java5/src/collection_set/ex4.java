@@ -11,7 +11,7 @@ public class ex4 {
 		Scanner leia = new Scanner(System.in);
 		char i = 's';
 		Integer num;
-		
+
 		nums.add(2);
 		nums.add(5);
 		nums.add(1);
@@ -22,13 +22,13 @@ public class ex4 {
 		nums.add(8);
 		nums.add(10);
 		nums.add(6);
-		
-		while (Character.toLowerCase(i)== 's') {
+
+		while (Character.toLowerCase(i) == 's') {
 			System.out.println("Digite um número para saber se está na coleção: ");
 			num = Integer.valueOf(leia.nextInt());
 			if (nums.contains(num)) {
 				System.out.printf("O número %d foi encontrado!", num);
-			}else {
+			} else {
 				System.out.printf("O número %d não foi encontrado!", num);
 			}
 			System.out.println("\nDeseja digitar outro número? (s) para sim ou (n) para não");
