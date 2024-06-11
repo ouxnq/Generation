@@ -1,5 +1,6 @@
 package stack;
 
+import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -17,13 +18,17 @@ public class ex2 {
 			if (i == 1) {
 				System.out.println("Digite o nome do Livro: ");
 				sc.skip("\\R?");
-				pilha.add(sc.nextLine());
+				pilha.push(sc.nextLine());
 				System.out.println("\nLivro Adicionado!");
 			} else if (i == 2) {
 				if (pilha.isEmpty()) {
 					System.out.println("A pilha está vazia!");
 				} else {
-					System.out.println("Fila: " + pilha);
+					Iterator<String> iPilha = pilha.iterator();
+					System.out.println("Pilha:");
+					while (iPilha.hasNext()) {
+						System.out.println(iPilha.next());
+					}
 				}
 			} else if (i == 3) {
 				pilha.pop();

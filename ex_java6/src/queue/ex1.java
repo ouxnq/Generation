@@ -1,5 +1,6 @@
 package queue;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
@@ -24,7 +25,11 @@ public class ex1 {
 				if (fila.isEmpty()) {
 					System.out.println("A fila está vazia!");
 				} else {
-					System.out.println("Fila: " + fila);
+					Iterator<String> iPessoas = fila.iterator();
+					System.out.println("Fila:");
+					while (iPessoas.hasNext()) {
+						System.out.println(iPessoas.next());
+					}
 				}
 			} else if (i == 3) {
 				fila.poll();
